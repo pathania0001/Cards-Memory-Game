@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import "../../Card.css"
-import Front from '../../Profile-items/I/front';
-import Back from '../../Profile-items/I/Back';
+import Front from '../../ProfileItems/I/Front';
+import Back from '../../ProfileItems/I/Back';
 
 function I() {
   const [flip, setFlip] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect, useContext } from 'react';
-import Front from '../../Profile-items/F/Front';
+import Front from '../../ProfileItems/F/Front';
 import "../../Card.css";
-import Back from '../../Profile-items/F/Back';
+import Back from '../../ProfileItems/F/Back';
 import GameContext from '../../../Context/GameContext';
 
 function F() {
