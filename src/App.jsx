@@ -14,7 +14,7 @@ function App() {
   return (
     <> 
     {
-      toggle?<Playgame />:<Profile />
+      toggle?<Profile />:<Playgame />
     }    
     </>
   )
