@@ -6,7 +6,7 @@ const GameContextProvider = ({ children }) => {
   const [won, setWon] = useState(0);
   const [lost, setLost] = useState(0);
   const [correctedPairs, setCorrectPairs] = useState(1);
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const [profileResultToggle, setprofileResultToggle] = useState(false);
   const [numberArray, setNumberArray] = useState([]);
   const [isWon,setIsWon] = useState(null);
