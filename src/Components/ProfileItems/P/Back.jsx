@@ -14,10 +14,10 @@ function Back({flipHandle}) {
   //     };
   // }
 
-  const onClickHandle = (type) => {
-    setGameType(type);
-    setToggle(!toggle);
-  };
+  // const onClickHandle = (type) => {
+  //   setGameType(type);
+  //   setToggle(!toggle);
+  // };
   
       
       // or by arrow funtion  ----this runs automatticaly on button mounted not on click 
@@ -29,10 +29,10 @@ function Back({flipHandle}) {
 
 
       //or by arrow funtion  ----this runs on click 
-      // const onClickHandle = (type) => ()=>{
-      //   setGameType(type);
-      //   setToggle(!toggle);
-      // };
+      const onClickHandle = (type) => ()=>{
+        setGameType(type);
+        setToggle(!toggle);
+      };
 
       
       // const onClickHandle = (type) => {

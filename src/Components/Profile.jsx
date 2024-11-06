@@ -5,6 +5,7 @@ import L from "./utils/ProfileComponents/L";
 import  I from "./utils/ProfileComponents/I"
 import P from "./utils/ProfileComponents/P";
 function Profile() {
+ 
   return (
     <>
          <div className='bg-gradient-to-r from-teal-400 to-yellow-200 w-100 h-screen max-w-screen flex justify-evenly items-center'>

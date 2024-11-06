@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import GameContext from "./GameContext";
 
 const GameContextProvider = ({ children }) => {
@@ -6,11 +6,11 @@ const GameContextProvider = ({ children }) => {
   const [won, setWon] = useState(0);
   const [lost, setLost] = useState(0);
   const [correctedPairs, setCorrectPairs] = useState(1);
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false); // Ensure initial state is false
   const [profileResultToggle, setprofileResultToggle] = useState(false);
   const [numberArray, setNumberArray] = useState([]);
-  const [isWon,setIsWon] = useState(null);
-     const isInitialRender = useRef(true);
+  const [isWon, setIsWon] = useState(null);
+  const isInitialRender = useRef(true);
 
   useEffect(() => {
     if (isInitialRender.current) {
@@ -34,7 +34,7 @@ const GameContextProvider = ({ children }) => {
         7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8,
       ];
     }
-    setNumberArray((numberArray)=>{return shuffleArray(newArray)});
+    setNumberArray((numberArray) => shuffleArray(newArray));
   }, [gameType]);
 
   function shuffleArray(array) {
@@ -44,6 +44,7 @@ const GameContextProvider = ({ children }) => {
     }
     return array;
   }
+
   return (
     <GameContext.Provider
       value={{
@@ -60,8 +61,8 @@ const GameContextProvider = ({ children }) => {
         numberArray,
         toggle,
         setToggle,
-        profileResultToggle, 
-        setprofileResultToggle
+        profileResultToggle,
+        setprofileResultToggle,
       }}
     >
       {children}
